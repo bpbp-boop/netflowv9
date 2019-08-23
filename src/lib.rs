@@ -1,12 +1,12 @@
 #![cfg_attr(test, feature(test))]
-#![feature(trace_macros)]
+// #![feature(trace_macros)]
 #![recursion_limit="1000"]
 
 use std::fmt;
 use std::mem;
 use std::ptr;
 
-trace_macros!(false);
+// trace_macros!(false);
 
 macro_rules! read {
     ([u8; $len:expr], $slice:expr, $index:expr) => {
